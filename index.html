@@ -1,304 +1,333 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jody | Portfolio (eng)</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jody | Portfolio (en)</title>
-
-  <!-- 
+    <!-- 
     - favicon
   -->
-  <link rel="Website icon" type="png" href="./assets/images/favicon.png">
+    <link rel="Website icon" type="png" href="./assets/images/favicon.png" />
 
-  <!-- 
+    <!-- 
     - custom css link
   -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-  <!-- 
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- 
     - google font link
   -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&family=Saira+Stencil+One&display=swap"
-    rel="stylesheet">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&family=Saira+Stencil+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body id="top" class="dark_theme">
-
-  <!-- 
+  <body id="top" class="dark_theme">
+    <!-- 
     - #HEADER
   -->
 
-  <header class="header" data-header>
-    <dimmaiv class="container">
+    <header class="header" data-header>
+      <dimmaiv class="container">
+        <h1 class="h1 logo">
+          <a href="#">Jody<span>.</span></a>
+        </h1>
 
-      <h1 class="h1 logo">
-        <a href="#">Jody<span>.</span></a>
-      </h1>
+        <button
+          class="nav-toggle-btn"
+          aria-label="Toggle Menu"
+          title="Toggle Menu"
+          data-nav-toggle-btn
+        >
+          <span class="one"></span>
+          <span class="two"></span>
+          <span class="three"></span>
+        </button>
 
-      <button class="nav-toggle-btn" aria-label="Toggle Menu" title="Toggle Menu" data-nav-toggle-btn>
-        <span class="one"></span>
-        <span class="two"></span>
-        <span class="three"></span>
-      </button>
+        <nav class="navbar" data-navbar>
+          <ul class="navbar-list">
+            <li>
+              <a href="#home" class="navbar-link">Home.</a>
+            </li>
+  
+            <li>
+              <a href="#about" class="navbar-link">About.</a>
+            </li>
+  
+            <li>
+              <a href="#skills" class="navbar-link">Skills.</a>
+            </li>
+  
+            <li>
+              <a href="#portfolio" class="navbar-link">Portfolio.</a>
+            </li>
+  
+            <li>
+              <a href="#contact" class="navbar-link">Contact.</a>
+            </li>
+          </ul>
+        </nav>
+      </dimmaiv>
+    </header>
 
-      <nav class="navbar" data-navbar>
-        <ul class="navbar-list">
-
-          <li>
-            <a href="#home" class="navbar-link">Home.</a>
-          </li>
-
-          <li>
-            <a href="#about" class="navbar-link">About.</a>
-          </li>
-
-          <li>
-            <a href="#skills" class="navbar-link">Skills.</a>
-          </li>
-
-          <li>
-            <a href="#portfolio" class="navbar-link">Portfolio.</a>
-          </li>
-
-          <li>
-            <a href="#contact" class="navbar-link">Contact.</a>
-          </li>
-
-        </ul>
-      </nav>
-
-    </dimmaiv>
-  </header>
-
-
-
-
-
-  <main>
-    <article class="container">
-
-      <!-- 
+    <main>
+      <article class="container">
+        <!-- 
         - #HERO
       -->
 
-      <section class="hero" id="home">
+        <section class="hero" id="home">
+          <figure class="hero-banner">
+            <picture>
+              <source
+                srcset="./assets/images/avatar-1.png"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="./assets/images/avatar-1.png"
+                media="(min-width: 500px)"
+              />
+              <img
+                src="./assets/images/avatar-1.png"
+                alt="My Avatar"
+                class="w-100"
+              />
+            </picture>
+          </figure>
 
-        <figure class="hero-banner">
+          <div class="hero-content">
+            <h2 class="h2 hero-title">Web and Software Developer</h2>
 
-          <picture>
-            <source srcset="./assets/images/avatar.png" media="(min-width: 768px)">
-            <source srcset="./assets/images/avatar.png" media="(min-width: 500px)">
-            <img src="./assets/images/avatar.png" alt= "My Avatar"
-              class="w-100">
-          </picture>
+            <a href="#contact" class="btn btn-primary">Get in touch</a>
+          </div>
 
-        </figure>
+          <ul class="hero-social-list">
+            <li>
+              <a
+                href="https://www.linkedin.com/in/jody-ossino/"
+                class="hero-social-link"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+                <div class="tooltip">Linkedin</div>
+              </a>
+            </li>
 
-        <div class="hero-content">
+            <li>
+              <a href="https://github.com/jodydev" class="hero-social-link">
+                <ion-icon name="logo-github"></ion-icon>
+                <div class="tooltip">Git Hub</div>
+              </a>
+            </li>
 
-          <h2 class="h2 hero-title ">Web and Software Developer</h2>
+            <li>
+              <a
+                href="https://twitter.com/jody_ossino_"
+                class="hero-social-link"
+              >
+                <ion-icon name="logo-twitter"></ion-icon>
+                <div class="tooltip">Twitter</div>
+              </a>
+            </li>
+          </ul>
 
-          <a href="#contact" class="btn btn-primary">Get in touch</a>
+          <a href="#stats" class="scroll-down">Scroll</a>
+        </section>
 
-        </div>
-
-        <ul class="hero-social-list">
-
-          <li>
-            <a href="linkedin.com/in/jody-ossino2001/" class="hero-social-link">
-              <ion-icon name="logo-linkedin"></ion-icon>
-              <div class="tooltip">Linkedin</div>
-            </a>
-          </li>
-
-          <li>
-            <a href="https://github.com/jodydev" class="hero-social-link">
-              <ion-icon name="logo-github"></ion-icon>
-              <div class="tooltip">Git Hub</div>
-            </a>
-          </li>
-
-          <li>
-            <a href="https://twitter.com/jody_ossino_" class="hero-social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-              <div class="tooltip">Twitter</div>
-            </a>
-          </li>
-
-        </ul>
-
-        <a href="#stats" class="scroll-down">Scroll</a>
-
-      </section>
-
-
-      <!-- 
+        <!-- 
         - #STATS
       -->
 
-      <section class="stats" id="stats">
-        <ul class="stats-list">
+        <section class="stats" id="stats">
+          <ul class="stats-list">
+            <li>
+              <a href="#" class="stats-card">
+                <div class="card-icon">
+                  <img
+                    src="./assets/images/stats-card_icon-1.png"
+                    alt="Badge icon"
+                  />
+                </div>
 
-          <li>
-            <a href="#" class="stats-card">
+                <h2 class="h2 card-title">
+                  1+ <strong>Years of Experience</strong>
+                </h2>
 
-              <div class="card-icon">
-                <img src="./assets/images/stats-card_icon-1.png" alt="Badge icon">
-              </div>
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+              </a>
+            </li>
 
-              <h2 class="h2 card-title">
-                1+ <strong>Years of Experience</strong>
-              </h2>
+            <li>
+              <a href="#" class="stats-card">
+                <div class="card-icon">
+                  <img
+                    src="./assets/images/stats-card_icon-2.png"
+                    alt="Checkmark icon"
+                  />
+                </div>
 
-              <ion-icon name="chevron-forward-outline"></ion-icon>
+                <h2 class="h2 card-title">
+                  10+ <strong>Completed Projects</strong>
+                </h2>
 
-            </a>
-          </li>
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+              </a>
+            </li>
 
-          <li>
-            <a href="#" class="stats-card">
+            <li>
+              <a href="#" class="stats-card">
+                <div class="card-icon">
+                  <img
+                    src="./assets/images/stats-card_icon-3.png"
+                    alt="Peoples rating icon"
+                  />
+                </div>
 
-              <div class="card-icon">
-                <img src="./assets/images/stats-card_icon-2.png" alt="Checkmark icon">
-              </div>
+                <h2 class="h2 card-title">
+                  10+ <strong>Happy Clients</strong>
+                </h2>
 
-              <h2 class="h2 card-title">
-                10+ <strong>Completed Projects</strong>
-              </h2>
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </section>
 
-              <ion-icon name="chevron-forward-outline"></ion-icon>
-
-            </a>
-          </li>
-
-          <li>
-            <a  href="#" class="stats-card">
-
-              <div class="card-icon">
-                <img src="./assets/images/stats-card_icon-3.png" alt="Peoples rating icon">
-              </div>
-
-              <h2 class="h2 card-title">
-                10+ <strong>Happy Clients</strong>
-              </h2>
-
-              <ion-icon name="chevron-forward-outline"></ion-icon>
-
-            </a>
-          </li>
-
-        </ul>
-      </section>
-
-
-
-       <!-- 
+        <!-- 
         - #ABOUT
       -->
 
-      <figure class="about-banner">
-        <img src="./assets/images/avatar-about.png" alt="My Avatar"
-         class="" >
-      </figure>
+        <section class="about" id="about">
+          <figure class="about-banner">
+            <img
+              src="./assets/images/avatar-3.png"
+              alt="My Avatar"
+              class="w-100"
+            />
+          </figure>
 
-      <div class="about-content section-content">
+          <div class="about-content section-content">
+            <p class="section-subtitle">About me</p>
 
-        <p class="section-subtitle">About me</p>
+            <h2 class="h3 section-title">
+              Need a Creative Product? I can Help You!
+            </h2>
 
-        <h2 class="h3 section-title">Need a Creative Product? I can Help You!</h2>
+            <p class="section-text">
+              Hi! I’m Jody Ossino, and I’m a developer who has passion for building clean web applications with intuitive
+              functionalities. I enjoy the process of turning ideas into reality using creative solutions. I’m always
+              curious about
+              learning new skills, tools, and concepts. In addition to working on various solo full stack projects, I have
+              worked with
+              creative teams, which involves daily stand-ups and communications, source control, and project management.
+            </p>
 
-        <p class="section-text">
-          Hi! I’m Jody Ossino, and I’m a developer who has passion for building clean web applications with intuitive
-          functionalities. I enjoy the process of turning ideas into reality using creative solutions. I’m always
-          curious about
-          learning new skills, tools, and concepts. In addition to working on various solo full stack projects, I have
-          worked with
-          creative teams, which involves daily stand-ups and communications, source control, and project management.
-        </p>
+            <div class="btn-group">
+              <a href="./CV-JODY-OSSINO-ENG.pdf" 
+                download="./CV-JODY-OSSINO-ENG.pdf"
+                ><button class="btn btn-secondary">Download cv</button></a
+              >
+            </div>
+          </div>
+        </section>
 
-        <div class="btn-group">
-          <a href="#"><button class="btn btn-secondary">Hire me</button></a>
-          <a href="#"><button class="btn btn-primary">Download cv</button></a>
-        </div>
-
-      </div>
-
-
-      <!-- 
+        <!-- 
         - #SKILLS
       -->
 
-      <section class="skills" id="skills">
+        <section class="skills" id="skills">
+          <div class="skills-content section-content">
+            <p class="section-subtitle">My skills</p>
 
-        <div class="skills-content section-content">
+            <h2 class="h3 section-title">
+              What My Programming Skills Included?
+            </h2>
 
-          <p class="section-subtitle">My skills</p>
-
-          <h2 class="h3 section-title">What My Programming Skills Included?</h2>
-
-          <p class="section-text">
-            I develop simple, intuitive and responsive user interface that helps users get things done with less effort
+            <p class="section-text">
+              I develop simple, intuitive and responsive user interface that helps users get things done with less effort
             and time with those technologies.
-          </p>
+            </p>
 
-          <div class="skills-toggle" data-toggle-box>
-            <button class="toggle-btn active" data-toggle-btn>Skills</button>
+            <div class="skills-toggle" data-toggle-box>
+              <button class="toggle-btn active" data-toggle-btn>
+                Skills.
+              </button>
 
-            <button class="toggle-btn" data-toggle-btn>Tools</button>
+              <button class="toggle-btn" data-toggle-btn>Tools.</button>
+            </div>
           </div>
 
-        </div>
-
-        <div class="skills-box" data-skills-box>
-
-          <ul class="skills-list">
-
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">HTML5</div>
-                <div class="card-icon">
-                  <img src="./assets/images/html5.png" alt="HTML5 logo">
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">CSS3</div>
-                <div class="card-icon">
-                  <img src="./assets/images/css3.png" alt="CSS3 logo">
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">JavaScript</div>
-                <div class="card-icon">
-                  <img src="./assets/images/javascript.png" alt="JavaScript logo">
-                </div>
-              </div>
-            </li>
-
-            <li>
+          <div class="skills-box" data-skills-box>
+            <ul class="skills-list">
+              <li>
                 <div class="skill-card">
-                  <div class="tooltip">React</div>
+                  <div class="tooltip">HTML5</div>
                   <div class="card-icon">
-                    <img src="./assets/images/react.png" alt="React logo">
+                    <img src="./assets/images/html5.png" alt="HTML5 logo" />
                   </div>
                 </div>
               </li>
 
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">CSS3</div>
+                  <div class="card-icon">
+                    <img src="./assets/images/css3.png" alt="CSS3 logo" />
+                  </div>
+                </div>
+              </li>
 
-            <li>
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">JavaScript</div>
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/javascript.png"
+                      alt="JavaScript logo"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">TypeScript</div>
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/typescript.png"
+                      alt="TypeScript logo"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">React</div>
+                  <div class="card-icon">
+                    <img src="./assets/images/react.png" alt="React logo" />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">Node Js</div>
+                  <div class="card-icon">
+                    <img src="./assets/images/nodejs.png" alt="Node Js logo" />
+                  </div>
+                </div>
+              </li>
+
+              <li>
                 <div class="skill-card">
                   <div class="tooltip">PHP</div>
                   <div class="card-icon">
-                    <img src="./assets/images/php-logo.png" alt="Php logo">
+                    <img src="./assets/images/php-logo.png" alt="Php logo" />
                   </div>
                 </div>
               </li>
@@ -306,9 +335,21 @@
               <li>
                 <div class="skill-card">
                   <div class="tooltip">Laravel</div>
-  
+
                   <div class="card-icon">
-                    <img src="./assets/images/laravel-logo.png" alt="Laravel logo">
+                    <img
+                      src="./assets/images/laravel-logo.png"
+                      alt="Laravel logo"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">Supabase</div>
+                  <div class="card-icon">
+                    <img src="./assets/images/supabase.png" alt="Supabase logo" />
                   </div>
                 </div>
               </li>
@@ -316,302 +357,428 @@
               <li>
                 <div class="skill-card">
                   <div class="tooltip">My SQL</div>
-  
+
                   <div class="card-icon">
-                    <img src="./assets/images/mysql-logo.png" alt="MySql logo">
+                    <img
+                      src="./assets/images/mysql-logo.png"
+                      alt="MySql logo"
+                    />
                   </div>
                 </div>
               </li>
+            </ul>
 
-          </ul>
-
-          <ul class="tools-list">
-
-            <li>
+            <ul class="tools-list">
+              <li>
                 <div class="skill-card">
                   <div class="tooltip">Bootstrap</div>
                   <div class="card-icon">
-                    <img src="./assets/images/bootstrap.png" alt="Bootstrap logo">
+                    <img
+                      src="./assets/images/bootstrap.png"
+                      alt="Bootstrap logo"
+                    />
                   </div>
                 </div>
               </li>
 
-            <li>
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">Tailwind CSS</div>
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/tailwind-css.png"
+                      alt="Tailwind CSS logo"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">Vite</div>
+                  <div class="card-icon">
+                    <img src="./assets/images/vite.png" alt="Vite logo" />
+                  </div>
+                </div>
+              </li>
+
+              <li>
                 <div class="skill-card">
                   <div class="tooltip">jQuery</div>
                   <div class="card-icon">
-                    <img src="./assets/images/jquery.png" alt="jQuery logo">
-                  </div>
-                </div>
-            </li>
-
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">Git</div>
-                <div class="card-icon">
-                  <img src="./assets/images/git.png" alt="Git logo">
-                </div>
-              </div>
-            </li>
-
-            <li>
-                <div class="skill-card">
-                  <div class="tooltip">VS Code</div>
-                  <div class="card-icon">
-                    <img src="./assets/images/vs-code.png" alt="VS Code logo">
+                    <img src="./assets/images/jquery.png" alt="jQuery logo" />
                   </div>
                 </div>
               </li>
 
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">Command Line</div>
-                <div class="card-icon">
-                  <img src="./assets/images/command.png" alt="Command Line logo">
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">Git</div>
+                  <div class="card-icon">
+                    <img src="./assets/images/git.png" alt="Git logo" />
+                  </div>
                 </div>
-              </div>
-            </li>
+              </li>
 
-          </ul>
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">VS Code</div>
+                  <div class="card-icon">
+                    <img src="./assets/images/vs-code.png" alt="VS Code logo" />
+                  </div>
+                </div>
+              </li>
 
-        </div>
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">Command Line</div>
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/command.png"
+                      alt="Command Line logo"
+                    />
+                  </div>
+                </div>
+              </li>
 
-      </section> 
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">Figma</div>
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/figma.png"
+                      alt="Figma logo"
+                    />
+                  </div>
+                </div>
+              </li>
 
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">Canva</div>
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/canva.png"
+                      alt="Canva logo"
+                    />
+                  </div>
+                </div>
+              </li>
 
+            </ul>
+          </div>
+        </section>
 
-
-
-      <!-- 
+        <!-- 
         - #PROJECTS
       -->
 
+        <section class="project" id="portfolio">
+          <ul class="project-list">
+            <li>
+              <div class="project-content section-content">
+                <p class="section-subtitle">Projects</p>
 
+                <h2 class="h3 section-title">
+                  Here you can access my projects!
+                </h2>
 
-
-
-
-
-      <!-- 
-        - #CONTACT
-      -->
-
-      <section class="contact" id="contact">
-
-        <div class="contact-content section-content">
-
-          <p class="section-subtitle">Contact</p>
-
-          <h2 class="h3 section-title">Have You Any Project? Please Drop a Message</h2>
-
-          <p class="section-text">
-            Get in touch and let me know how i can help. Fill out the form and i’ll be in touch as soon as possible.
-          </p>
-
-          <ul class="contact-list">
-
-            <li class="contact-list-item">
-
-              <div class="contact-item-icon">
-                <ion-icon name="location-outline"></ion-icon>
+                <p class="section-text">
+                  I develop projects following User best practices
+                   Experience (UX) to ensure a browsing experience
+                   fluid and intuitive for the end customer.
+                </p>
               </div>
-
-              <div class="wrapper">
-                <h3 class="h4 contact-item-title">Address:</h3>
-
-                <address class="contact-info">
-                  Ada Zucchelli 7 | Bologna (BO) 
-                </address>
-              </div>
-
-            </li>
-
-            <li class="contact-list-item">
-
-              <div class="contact-item-icon">
-                <ion-icon name="call-outline"></ion-icon>
-              </div>
-
-              <div class="wrapper">
-                <h3 class="h4 contact-item-title">Phone:</h3>
-
-                <a href="tel:01234567789" class="contact-info">(+39) 333 6170035</a>
-
-              </div>
-
-            </li>
-
-            <li class="contact-list-item">
-
-              <div class="contact-item-icon">
-                <ion-icon name="mail-outline"></ion-icon>
-              </div>
-
-              <div class="wrapper">
-                <h3 class="h4 contact-item-title">Email:</h3>
-
-                <a href="mailto:info@jack.com" class="contact-info">jodyossino2001@gmail.com</a>
-
-              </div>
-
             </li>
 
             <li>
-              <ul class="contac-social-list">
+              <a href="https://github.com/jodydev/Crypto-App" class="project-card">
+                <figure class="card-banner">
+                  <img
+                    src="./assets/images/crypto-app.png"
+                    class="w-100"
+                    alt="A macintosh on a yellow background."
+                  />
+                </figure>
 
-                <li>
-                  <a href="linkedin.com/in/jody-ossino2001/" class="contact-social-link">
-                    <div class="tooltip">Linkedin</div>
+                <div class="card-content">
+                  <h3 class="h4 card-title">Crypto App</h3>
+                  <time class="publish-date" datetime="2022-04"
+                  >November 2023</time
+                >
+                </div>
+              </a>
+            </li>
 
-                    <ion-icon name="logo-linkedin"></ion-icon>
-                  </a>
-                </li>
+            <li>
+              <a href="https://jplay-zone.vercel.app" class="project-card">
+                <figure class="card-banner">
+                  <img
+                    src="./assets/images/jplay.png"
+                    class="w-100"
+                    alt="On a Blue background, a Wacom and a mouse."
+                  />
+                </figure>
 
-                <li>
-                  <a href="https://github.com/jodydev" class="contact-social-link">
-                    <div class="tooltip">Git Hub</div>
+                <div class="card-content">
+                  <h3 class="h4 card-title">JPlay</h3>
+                  <time class="publish-date" datetime="2022-04"
+                  >Novembere 2023</time
+                >
+                </div>
+              </a>
+            </li>
 
-                    <ion-icon name="logo-github"></ion-icon>
-                  </a>
-                </li>
+            <li>
+              <a
+                href="https://github.com/jodydev/Presto-it"
+                class="project-card"
+              >
+                <figure class="card-banner">
+                  <img
+                    src="./assets/images/presto-it.png"
+                    class="w-100"
+                    alt="presto.it"
+                  />
+                </figure>
 
-                <li>
-                  <a href="https://twitter.com/jody_ossino_" class="contact-social-link">
-                    <div class="tooltip">Twitter</div>
+                <div class="card-content">
+                  <h3 class="h4 card-title">Presto.it</h3>
 
-                    <ion-icon name="logo-twitter"></ion-icon>
-                  </a>
-                </li>
+                  <time class="publish-date" datetime="2022-04"
+                    >September 2023</time
+                  >
+                </div>
+              </a>
+            </li>
 
-              </ul>
+            <li>
+              <a href="https://react-task-list-two.vercel.app" class="project-card">
+                <figure class="card-banner">
+                  <img
+                    src="./assets/images/tasks-list.png"
+                    class="w-100"
+                    alt="A Cassette tape on a mellow apricot background."
+                  />
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">React Tasks List</h3>
+                  <time class="publish-date" datetime="2022-04"
+                  >October 2023</time
+                >
+                </div>
+              </a>
             </li>
 
           </ul>
+        </section>
 
-        </div>
+        <!-- 
+        - #CONTACT
+      -->
 
-        <form action="" class="contact-form">
+        <section class="contact" id="contact">
+          <div class="contact-content section-content">
+            <p class="section-subtitle">Contacts</p>
 
-          <div class="form-wrapper">
+            <h2 class="h3 section-title">
+              Have You Any Project? Please Drop a Message
+            </h2>
 
-            <label for="name" class="form-label">Name</label>
+            <p class="section-text">
+              Get in touch and let me know how i can help. Fill out the form and i’ll be in touch as soon as possible.
+            </p>
 
-            <div class="input-wrapper">
+            <ul class="contact-list">
+              <li class="contact-list-item">
+                <div class="contact-item-icon">
+                  <ion-icon name="location-outline"></ion-icon>
+                </div>
 
-              <input type="text" name="name" id="name" required placeholder="e.g Marc Red" class="input-field">
+                <div class="wrapper">
+                  <h3 class="h4 contact-item-title">Address:</h3>
 
-              <ion-icon name="person-circle"></ion-icon>
+                  <address class="contact-info">Bologna (BO)</address>
+                </div>
+              </li>
 
-            </div>
+              <li class="contact-list-item">
+                <div class="contact-item-icon">
+                  <ion-icon name="call-outline"></ion-icon>
+                </div>
 
+                <div class="wrapper">
+                  <h3 class="h4 contact-item-title">Phone:</h3>
+
+                  <a href="#" class="contact-info">(+39) 333 6170035</a>
+                </div>
+              </li>
+
+              <li class="contact-list-item">
+                <div class="contact-item-icon">
+                  <ion-icon name="mail-outline"></ion-icon>
+                </div>
+
+                <div class="wrapper">
+                  <h3 class="h4 contact-item-title">Email:</h3>
+
+                  <a href="#" class="contact-info">jodyossino.dev@gmail.com</a>
+                </div>
+              </li>
+
+              <li>
+                <ul class="contac-social-list">
+                  <li>
+                    <a
+                      href="ttps://www.linkedin.com/in/jody-ossino/"
+                      class="contact-social-link"
+                    >
+                      <div class="tooltip">Linkedin</div>
+
+                      <ion-icon name="logo-linkedin"></ion-icon>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="https://github.com/jodydev"
+                      class="contact-social-link"
+                    >
+                      <div class="tooltip">Git Hub</div>
+
+                      <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="https://twitter.com/jody_ossino_"
+                      class="contact-social-link"
+                    >
+                      <div class="tooltip">Twitter</div>
+
+                      <ion-icon name="logo-twitter"></ion-icon>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
           </div>
 
-          <div class="form-wrapper">
+          <form action="" class="contact-form">
+            <div class="form-wrapper">
+              <label for="name" class="form-label">Name</label>
 
-            <label for="email" class="form-label">Email</label>
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  required
+                  placeholder="e.s Mario Rossi"
+                  class="input-field"
+                />
 
-            <div class="input-wrapper">
-
-              <input type="email" name="email" id="email" required placeholder="e.g marcored@gmail.com"
-                class="input-field">
-
-              <ion-icon name="mail"></ion-icon>
-
+                <ion-icon name="person-circle"></ion-icon>
+              </div>
             </div>
 
-          </div>
+            <div class="form-wrapper">
+              <label for="email" class="form-label">Email</label>
 
-          <div class="form-wrapper">
+              <div class="input-wrapper">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  required
+                  placeholder="e.s mariorossi@gmail.com"
+                  class="input-field"
+                />
 
-            <label for="phone" class="form-label">Phone</label>
-
-            <div class="input-wrapper">
-
-              <input type="tel" name="phone" id="phone" required placeholder="Phone Number" class="input-field">
-
-              <ion-icon name="call"></ion-icon>
-
+                <ion-icon name="mail"></ion-icon>
+              </div>
             </div>
 
-          </div>
+            <div class="form-wrapper">
+              <label for="phone" class="form-label">Phone</label>
 
-          <div class="form-wrapper">
+              <div class="input-wrapper">
+                <input
+                  type="tel"
+                  name="phone"
+                  id="phone"
+                  required
+                  placeholder="Numero di telefono"
+                  class="input-field"
+                />
 
-            <label for="message" class="form-label">Message</label>
-
-            <div class="input-wrapper">
-
-              <textarea name="message" id="message" required placeholder="Write message..."
-                class="input-field"></textarea>
-
-              <ion-icon name="chatbubbles"></ion-icon>
-
+                <ion-icon name="call"></ion-icon>
+              </div>
             </div>
 
-          </div>
+            <div class="form-wrapper">
+              <label for="message" class="form-label">Message</label>
 
-          <button type="submit" class="btn btn-primary">Send</button>
+              <div class="input-wrapper">
+                <textarea
+                  name="message"
+                  id="message"
+                  required
+                  placeholder="Scrivi un messaggio..."
+                  class="input-field"
+                ></textarea>
 
-        </form>
+                <ion-icon name="chatbubbles"></ion-icon>
+              </div>
+            </div>
 
-      </section>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </section>
+      </article>
+    </main>
 
-    </article>
-  </main>
-
-
-
-
-
-  <!-- 
+    <!-- 
     - #FOOTER
   -->
 
-  <footer class="footer">
-    <div class="container">
+    <footer class="footer" id="about">
+      <div class="container">
+        <p class="h1 logo">
+          <a href="#"> Jody<span>.</span> </a>
+        </p>
 
-      <p class="h1 logo">
-        <a href="#">
-          Jody<span>.</span>
-        </a>
-      </p>
+        <p class="copyright">
+          &copy; 2023 <a href="https://github.com/jodydev">jodydev</a>.
+        </p>
+      </div>
+    </footer>
 
-      <p class="copyright">
-        &copy; 2023 <a href="https://github.com/jodydev">jodydev</a>.
-      </p>
-
-    </div>
-  </footer>
-
-
-
-
-
-  <!-- 
+    <!-- 
     - #GO TO TOP
   -->
 
-  <a href="#top" class="go-top" data-go-top title="Go to Top">
-    <ion-icon name="arrow-up"></ion-icon>
-  </a>
+    <a href="#top" class="go-top" data-go-top title="Go to Top">
+      <ion-icon name="arrow-up"></ion-icon>
+    </a>
 
-
-
-
-
-  <!-- 
+    <!-- 
     - custom js link
   -->
-  <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/script.js"></script>
 
-  <!-- 
+    <!-- 
     - ionicon link
   -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-
-
-</body>
-
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
